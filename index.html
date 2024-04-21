@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Game of Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class='container mt-4' id="everything">
+        <h2 class="text-center">Let's Play A Game Of...</h2>
+        <h1 class="text-center mb-4">Tic-Tac-Toe!</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="board" id="game-board">
+                    <div class="cell" id="cell1"></div>
+                    <div class="cell" id="cell2"></div>
+                    <div class="cell" id="cell3"></div>
+                    <div class="cell" id="cell4"></div>
+                    <div class="cell" id="cell5"></div>
+                    <div class="cell" id="cell6"></div>
+                    <div class="cell" id="cell7"></div>
+                    <div class="cell" id="cell8"></div>
+                    <div class="cell" id="cell9"></div>
+                </div>
+            </div>
+        </div>
+        <h2 id="currentTurnText" class="text-center mt-3 mb-3">X Controls the Game</h2>
+        <div id="reset" class="text-center">
+            <button id="restartNow" class="btn btn-danger">Game Restart</button>
+        </div>
+        <div id="gameResult" class="alert alert-dismissible mt-2 d-none">
+            <strong id="gameResultText"></strong>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src='node_modules/jquery/dist/jquery.js'></script>
+    <script src="index.js"></script>
+</body>
+<footer></footer>
+</html>
